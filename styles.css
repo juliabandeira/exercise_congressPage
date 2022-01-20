@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+  color: #406882;
+  font-family: "Krub", sans-serif;
+}
+
+.body-container {
+  position: relative;
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("abstract.jpg");
+  opacity: 0.05;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2em 0;
+}
+
+.menu a {
+  text-transform: capitalize;
+}
+
+section,
+.info {
+  width: 70%;
+  margin: 1em auto;
+  padding: 2em 0;
+}
+
+.info {
+  text-align: center;
+  padding: 2em 0;
+  font-family: "Poiret One", cursive;
+  position: relative;
+  height: 300px;
+}
+
+.info h1 {
+  font-weight: 900;
+  font-size: 5em;
+}
+
+.info h2 {
+  font-weight: 400;
+}
+
+.section {
+  line-height: 1.5;
+}
+
+.title {
+  padding-bottom: 1.5em;
+}
+
+.item {
+  margin-bottom: 2em;
+}
+
+#schedule h1,
+#schedule h3 {
+  text-align: center;
+}
+
+.schedule-day {
+  margin-bottom: 3em;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 1.5em auto;
+}
+
+.schedule-item p {
+  width: 30%;
+  text-align: left;
+}
+
+.register {
+  border: 1px solid;
+  width: fit-content;
+  padding: 1em 2em;
+  font-size: 1.5em;
+}
+
+.title-register {
+  text-align: center;
+  padding: 2em 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+input,
+select,
+textarea {
+  padding: 5px;
+  line-height: 2.5em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+  border-color: rgb(0, 19, 77);
+  background-color: inherit;
+}
+
+button {
+  width: 20%;
+  line-height: 2.5em;
+  margin-bottom: 15px;
+  background-color: rgb(0, 19, 77);
+  color: rgb(217, 217, 217);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(217, 217, 217);
+  color: rgb(0, 19, 77);
+}

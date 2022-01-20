@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <header>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#highlights">Highlights</a></li>
+            <li><a href="index.html#schedule">Schedule</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h1 class="title title-register">Registration</h1>
+
+      <form action="" method="get">
+        <div class="form-container">
+          <label for="name">Name:</label>
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form-container">
+          <label for="email">Email:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-container">
+          <label for="institution">Institution:</label>
+          <input
+            id="institution"
+            type="institution"
+            name="institution"
+            placeholder="Enter your institution"
+          />
+        </div>
+
+        <div class="form-container">
+          <label for="participation">Form of participation:</label>
+          <select id="participation" name="participation">
+            <option disabled selected value>Select</option>
+            <option value="speaker">Speaker</option>
+            <option value="observer">Observer</option>
+          </select>
+        </div>
+
+        <div class="form-container">
+          <label for="comments"
+            >Do you have any other comments, questions or concerns?</label
+          >
+          <textarea id="comments" placeholder="Enter your comment"></textarea>
+        </div>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
